@@ -6,13 +6,10 @@
       <module name="Choose_Runtime.ChooseRuntime.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
-        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/5.0/libexec" />

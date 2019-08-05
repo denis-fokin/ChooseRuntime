@@ -24,14 +24,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -132,6 +142,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564861187765" />
@@ -144,7 +155,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -227,7 +238,7 @@
       <updated>1564769900013</updated>
       <workItem from="1564769905824" duration="68000" />
       <workItem from="1564770168037" duration="2820000" />
-      <workItem from="1565004312263" duration="1579000" />
+      <workItem from="1565004312263" duration="2482000" />
     </task>
     <servers />
   </component>
@@ -239,10 +250,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
+    <state x="158" y="133" width="1355" height="700" key="SettingsEditor/3360.2100" />
   </component>
 </project>
