@@ -1,24 +1,27 @@
 <idea-plugin>
-    <id>Choose Runtime.ChooseRuntime</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>com.jetbrains.ChooseRuntime</id>
+    <name>Runtime Switcher</name>
+    <vendor email="denis.fokin@gmail.com" url="http://www.jetbrains.com">JetBrains</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+      IntelliJ IDEA includes JetBrains Runtime (based on OpenJDK 8),
+      which is used by default. It is recommended to run IntelliJ IDEA using JetBrains Runtime,
+      which fixes various known OpenJDK and Oracle JDK bugs, and provides better performance and stability.
+      But in some cases you may be required to use another Java runtime or a specific version of JetBrains Runtime.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
-    -->
+
+    <idea-version since-build="182"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <action id="bootRuntime.main.ChooseBootRuntimeAction" class="bootRuntime.main.ChooseBootRuntimeAction"
+                text="Choose Runtime..."/>
     </actions>
 </idea-plugin>

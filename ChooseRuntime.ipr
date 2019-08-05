@@ -4,16 +4,20 @@
     <bytecodeTargetLevel>
       <module name="Choose_Runtime.ChooseRuntime.main" target="1.8" />
       <module name="Choose_Runtime.ChooseRuntime.test" target="1.8" />
+      <module name="ChooseRuntime.main" target="11" />
+      <module name="ChooseRuntime.test" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/5.0/libexec" />
-        <option name="gradleJvm" value="1.8 (131)" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -33,12 +37,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.iml" filepath="$PROJECT_DIR$/ChooseRuntime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.main.iml" filepath="$PROJECT_DIR$/ChooseRuntime.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.test.iml" filepath="$PROJECT_DIR$/ChooseRuntime.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" />
       <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8 (131)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
@@ -46,6 +52,9 @@
   </component>
   <component name="libraryTable">
     <library name="Gradle: junit:junit:4.12">
+      <ANNOTATIONS>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/externalAnnotations/junit/junit/4.12-an1/junit-4.12-an1-annotations.zip!/" />
+      </ANNOTATIONS>
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/" />
       </CLASSES>

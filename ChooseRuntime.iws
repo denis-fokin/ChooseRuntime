@@ -24,13 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooseRuntime.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChooseRuntime.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,30 +86,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -125,11 +101,6 @@
         <option value="Kotlin File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>193.1750</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,7 +126,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -177,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Plugin">
+  <component name="RunManager" selected="Gradle.ChooseRuntime [build]">
     <configuration name="ChooseRuntime [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -238,8 +212,18 @@
       <updated>1564769900013</updated>
       <workItem from="1564769905824" duration="68000" />
       <workItem from="1564770168037" duration="2820000" />
-      <workItem from="1565004312263" duration="2482000" />
+      <workItem from="1565004312263" duration="2514000" />
+      <workItem from="1565018336719" duration="1767000" />
+      <workItem from="1565023763330" duration="1424000" />
     </task>
+    <task id="LOCAL-00001" summary="Project files">
+      <created>1565018076933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565018076933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,10 +243,37 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project files" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="173" key="#Plugins" />
+    <state x="421" y="173" key="#Plugins/3360.2100" />
+    <state x="140" y="71" key="#Project_Structure" />
+    <state x="140" y="71" key="#Project_Structure/3360.2100" />
+    <state width="1257" height="267" key="GridCell.Tab.0.bottom" />
+    <state width="1257" height="267" key="GridCell.Tab.0.bottom/3360.2100" />
+    <state width="1257" height="267" key="GridCell.Tab.0.center" />
+    <state width="1257" height="267" key="GridCell.Tab.0.center/3360.2100" />
+    <state width="1257" height="267" key="GridCell.Tab.0.left" />
+    <state width="1257" height="267" key="GridCell.Tab.0.left/3360.2100" />
+    <state width="1257" height="267" key="GridCell.Tab.0.right" />
+    <state width="1257" height="267" key="GridCell.Tab.0.right/3360.2100" />
+    <state width="1198" height="365" key="GridCell.Tab.1.bottom" />
+    <state width="1198" height="365" key="GridCell.Tab.1.bottom/3360.2100" />
+    <state width="1198" height="365" key="GridCell.Tab.1.center" />
+    <state width="1198" height="365" key="GridCell.Tab.1.center/3360.2100" />
+    <state width="1198" height="365" key="GridCell.Tab.1.left" />
+    <state width="1198" height="365" key="GridCell.Tab.1.left/3360.2100" />
+    <state width="1198" height="365" key="GridCell.Tab.1.right" />
+    <state width="1198" height="365" key="GridCell.Tab.1.right/3360.2100" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor/3360.2100" />
+    <state x="278" y="167" key="Vcs.Push.Dialog" />
+    <state x="278" y="167" key="Vcs.Push.Dialog/3360.2100" />
+    <state x="443" y="113" width="1137" height="845" key="find.popup" />
+    <state x="443" y="113" width="1137" height="845" key="find.popup/3360.2100" />
+    <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup" />
+    <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup/3360.2100" />
   </component>
 </project>

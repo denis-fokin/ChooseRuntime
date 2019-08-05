@@ -9,7 +9,7 @@ apply plugin: 'kotlin'
 group 'Choose Runtime'
 version '1.0'
 
-sourceCompatibility = 1.8
+//sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -23,6 +23,7 @@ dependencies {
 intellij {
     version '182.5262.2'
 }
+
 patchPluginXml {
     changeNotes """
       Add change notes here.<br>
