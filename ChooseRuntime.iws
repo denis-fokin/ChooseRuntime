@@ -24,12 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +212,7 @@
       <workItem from="1565023763330" duration="2102000" />
       <workItem from="1565030083581" duration="1482000" />
       <workItem from="1565031639649" duration="248000" />
-      <workItem from="1565169245611" duration="1067000" />
+      <workItem from="1565169245611" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="Project files">
       <created>1565018076933</created>
@@ -232,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565029055330</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Config  and description improvements">
+      <created>1565170816805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565170816805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +257,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project files" />
     <MESSAGE value="Settings update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Settings update" />
+    <MESSAGE value="Config  and description improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config  and description improvements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="173" key="#Plugins" />
@@ -283,6 +287,7 @@
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor/3360.2100" />
     <state x="278" y="167" key="Vcs.Push.Dialog" />
     <state x="278" y="167" key="Vcs.Push.Dialog/3360.2100" />
+    <state x="278" y="167" key="Vcs.Push.Dialog/3840.2160/3360.2100" />
     <state x="443" y="113" width="1137" height="845" key="find.popup" />
     <state x="443" y="113" width="1137" height="845" key="find.popup/3360.2100" />
     <state width="700" height="626" key="javadoc.popup.new" />
