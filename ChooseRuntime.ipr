@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Choose Runtime.Choose_Runtime.ChooseRuntime.main" target="1.8" />
+      <module name="Choose Runtime.Choose_Runtime.ChooseRuntime.test" target="1.8" />
       <module name="Choose_Runtime.ChooseRuntime.main" target="1.8" />
       <module name="Choose_Runtime.ChooseRuntime.test" target="1.8" />
       <module name="ChooseRuntime.main" target="1.8" />
@@ -12,8 +14,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
-        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/5.0/libexec" />
@@ -39,7 +39,6 @@
       <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.iml" filepath="$PROJECT_DIR$/ChooseRuntime.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.main.iml" filepath="$PROJECT_DIR$/ChooseRuntime.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChooseRuntime.test.iml" filepath="$PROJECT_DIR$/ChooseRuntime.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" />
       <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" filepath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.test.iml" />
     </modules>

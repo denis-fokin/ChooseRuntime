@@ -24,8 +24,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +87,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ChooseRuntime" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -99,6 +116,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="279" />
+    <option name="y" value="38" />
+    <option name="width" value="1262" />
+    <option name="height" value="932" />
   </component>
   <component name="ProjectId" id="1Oscm3mgEEcKftOZRPO8vCsfGdf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -146,7 +169,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ChooseRuntime [build]">
+  <component name="RunManager" selected="Gradle.ChooseRuntime [buildPlugin]">
+    <configuration name="ChooseRuntime [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ChooseRuntime [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,6 +201,25 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChooseRuntime [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,9 +249,13 @@
     <list>
       <item itemvalue="Gradle.Plugin" />
       <item itemvalue="Gradle.ChooseRuntime [build]" />
+      <item itemvalue="Gradle.ChooseRuntime [publishPlugin]" />
+      <item itemvalue="Gradle.ChooseRuntime [buildPlugin]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ChooseRuntime [buildPlugin]" />
+        <item itemvalue="Gradle.ChooseRuntime [publishPlugin]" />
         <item itemvalue="Gradle.ChooseRuntime [build]" />
       </list>
     </recent_temporary>
@@ -212,7 +277,9 @@
       <workItem from="1565023763330" duration="2102000" />
       <workItem from="1565030083581" duration="1482000" />
       <workItem from="1565031639649" duration="248000" />
-      <workItem from="1565169245611" duration="1474000" />
+      <workItem from="1565169245611" duration="3120000" />
+      <workItem from="1565178050804" duration="158000" />
+      <workItem from="1565178818793" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="Project files">
       <created>1565018076933</created>
@@ -235,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565170816805</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="GitHub description">
+      <created>1565171919996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565171919996</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,29 +332,38 @@
     <MESSAGE value="Project files" />
     <MESSAGE value="Settings update" />
     <MESSAGE value="Config  and description improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config  and description improvements" />
+    <MESSAGE value="GitHub description" />
+    <option name="LAST_COMMIT_MESSAGE" value="GitHub description" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="173" key="#Plugins" />
     <state x="421" y="173" key="#Plugins/3360.2100" />
     <state x="140" y="71" key="#Project_Structure" />
     <state x="140" y="71" key="#Project_Structure/3360.2100" />
-    <state width="1238" height="220" key="GridCell.Tab.0.bottom" />
-    <state width="1238" height="220" key="GridCell.Tab.0.bottom/3360.2100" />
-    <state width="1238" height="220" key="GridCell.Tab.0.center" />
-    <state width="1238" height="220" key="GridCell.Tab.0.center/3360.2100" />
-    <state width="1238" height="220" key="GridCell.Tab.0.left" />
-    <state width="1238" height="220" key="GridCell.Tab.0.left/3360.2100" />
-    <state width="1238" height="220" key="GridCell.Tab.0.right" />
-    <state width="1238" height="220" key="GridCell.Tab.0.right/3360.2100" />
-    <state width="1198" height="365" key="GridCell.Tab.1.bottom" />
-    <state width="1198" height="365" key="GridCell.Tab.1.bottom/3360.2100" />
-    <state width="1198" height="365" key="GridCell.Tab.1.center" />
-    <state width="1198" height="365" key="GridCell.Tab.1.center/3360.2100" />
-    <state width="1198" height="365" key="GridCell.Tab.1.left" />
-    <state width="1198" height="365" key="GridCell.Tab.1.left/3360.2100" />
-    <state width="1198" height="365" key="GridCell.Tab.1.right" />
-    <state width="1198" height="365" key="GridCell.Tab.1.right/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.bottom" />
+    <state width="1139" height="243" key="GridCell.Tab.0.bottom/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.bottom/3840.2160/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.center" />
+    <state width="1139" height="243" key="GridCell.Tab.0.center/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.center/3840.2160/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.left" />
+    <state width="1139" height="243" key="GridCell.Tab.0.left/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.left/3840.2160/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.right" />
+    <state width="1139" height="243" key="GridCell.Tab.0.right/3360.2100" />
+    <state width="1139" height="243" key="GridCell.Tab.0.right/3840.2160/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.bottom" />
+    <state width="1139" height="388" key="GridCell.Tab.1.bottom/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.bottom/3840.2160/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.center" />
+    <state width="1139" height="388" key="GridCell.Tab.1.center/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.center/3840.2160/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.left" />
+    <state width="1139" height="388" key="GridCell.Tab.1.left/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.left/3840.2160/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.right" />
+    <state width="1139" height="388" key="GridCell.Tab.1.right/3360.2100" />
+    <state width="1139" height="388" key="GridCell.Tab.1.right/3840.2160/3360.2100" />
     <state x="387" y="168" key="IDE.errors.dialog" />
     <state x="387" y="168" key="IDE.errors.dialog/3840.2160/3360.2100" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
@@ -290,6 +373,7 @@
     <state x="278" y="167" key="Vcs.Push.Dialog/3840.2160/3360.2100" />
     <state x="443" y="113" width="1137" height="845" key="find.popup" />
     <state x="443" y="113" width="1137" height="845" key="find.popup/3360.2100" />
+    <state x="443" y="113" width="1137" height="845" key="find.popup/3840.2160/3360.2100" />
     <state width="700" height="626" key="javadoc.popup.new" />
     <state width="700" height="626" key="javadoc.popup.new/3840.2160/3360.2100" />
     <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup" />
