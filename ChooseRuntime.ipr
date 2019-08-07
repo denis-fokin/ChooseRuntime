@@ -4,8 +4,8 @@
     <bytecodeTargetLevel>
       <module name="Choose_Runtime.ChooseRuntime.main" target="1.8" />
       <module name="Choose_Runtime.ChooseRuntime.test" target="1.8" />
-      <module name="ChooseRuntime.main" target="11" />
-      <module name="ChooseRuntime.test" target="11" />
+      <module name="ChooseRuntime.main" target="1.8" />
+      <module name="ChooseRuntime.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="GradleMigrationSettings" migrationVersion="1" />
@@ -17,7 +17,7 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/5.0/libexec" />
-        <option name="gradleJvm" value="#JAVA_INTERNAL" />
+        <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

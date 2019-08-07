@@ -24,11 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChooseRuntime.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChooseRuntime.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChooseRuntime.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
@@ -214,7 +213,10 @@
       <workItem from="1564770168037" duration="2820000" />
       <workItem from="1565004312263" duration="2514000" />
       <workItem from="1565018336719" duration="1767000" />
-      <workItem from="1565023763330" duration="1424000" />
+      <workItem from="1565023763330" duration="2102000" />
+      <workItem from="1565030083581" duration="1482000" />
+      <workItem from="1565031639649" duration="248000" />
+      <workItem from="1565169245611" duration="1067000" />
     </task>
     <task id="LOCAL-00001" summary="Project files">
       <created>1565018076933</created>
@@ -223,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565018076933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Settings update">
+      <created>1565029055330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565029055330</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,21 +253,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project files" />
+    <MESSAGE value="Settings update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Settings update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="173" key="#Plugins" />
     <state x="421" y="173" key="#Plugins/3360.2100" />
     <state x="140" y="71" key="#Project_Structure" />
     <state x="140" y="71" key="#Project_Structure/3360.2100" />
-    <state width="1257" height="267" key="GridCell.Tab.0.bottom" />
-    <state width="1257" height="267" key="GridCell.Tab.0.bottom/3360.2100" />
-    <state width="1257" height="267" key="GridCell.Tab.0.center" />
-    <state width="1257" height="267" key="GridCell.Tab.0.center/3360.2100" />
-    <state width="1257" height="267" key="GridCell.Tab.0.left" />
-    <state width="1257" height="267" key="GridCell.Tab.0.left/3360.2100" />
-    <state width="1257" height="267" key="GridCell.Tab.0.right" />
-    <state width="1257" height="267" key="GridCell.Tab.0.right/3360.2100" />
+    <state width="1238" height="220" key="GridCell.Tab.0.bottom" />
+    <state width="1238" height="220" key="GridCell.Tab.0.bottom/3360.2100" />
+    <state width="1238" height="220" key="GridCell.Tab.0.center" />
+    <state width="1238" height="220" key="GridCell.Tab.0.center/3360.2100" />
+    <state width="1238" height="220" key="GridCell.Tab.0.left" />
+    <state width="1238" height="220" key="GridCell.Tab.0.left/3360.2100" />
+    <state width="1238" height="220" key="GridCell.Tab.0.right" />
+    <state width="1238" height="220" key="GridCell.Tab.0.right/3360.2100" />
     <state width="1198" height="365" key="GridCell.Tab.1.bottom" />
     <state width="1198" height="365" key="GridCell.Tab.1.bottom/3360.2100" />
     <state width="1198" height="365" key="GridCell.Tab.1.center" />
@@ -267,12 +277,16 @@
     <state width="1198" height="365" key="GridCell.Tab.1.left/3360.2100" />
     <state width="1198" height="365" key="GridCell.Tab.1.right" />
     <state width="1198" height="365" key="GridCell.Tab.1.right/3360.2100" />
+    <state x="387" y="168" key="IDE.errors.dialog" />
+    <state x="387" y="168" key="IDE.errors.dialog/3840.2160/3360.2100" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor/3360.2100" />
     <state x="278" y="167" key="Vcs.Push.Dialog" />
     <state x="278" y="167" key="Vcs.Push.Dialog/3360.2100" />
     <state x="443" y="113" width="1137" height="845" key="find.popup" />
     <state x="443" y="113" width="1137" height="845" key="find.popup/3360.2100" />
+    <state width="700" height="626" key="javadoc.popup.new" />
+    <state width="700" height="626" key="javadoc.popup.new/3840.2160/3360.2100" />
     <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup" />
     <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup/3360.2100" />
   </component>

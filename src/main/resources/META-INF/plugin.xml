@@ -4,17 +4,19 @@
     <vendor email="denis.fokin@gmail.com" url="http://www.jetbrains.com">JetBrains</vendor>
 
     <description><![CDATA[
-      IntelliJ IDEA includes JetBrains Runtime (based on OpenJDK 8),
-      which is used by default. It is recommended to run IntelliJ IDEA using JetBrains Runtime,
+      IntelliJ IDEA includes JetBrains Runtime. It is recommended to run IntelliJ IDEA using JetBrains Runtime,
       which fixes various known OpenJDK and Oracle JDK bugs, and provides better performance and stability.
       But in some cases you may be required to use another Java runtime or a specific version of JetBrains Runtime.
+      <p>
+        <a href=https://github.com/denis-fokin/ChooseRuntime/blob/master/README.md>More info</a>
+      </p>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.lang</depends>
 
-    <idea-version since-build="182"/>
+    <idea-version since-build="182.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
