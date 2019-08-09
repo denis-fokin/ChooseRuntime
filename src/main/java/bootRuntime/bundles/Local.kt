@@ -6,7 +6,6 @@ import bootRuntime.command.CommandFactory.produce
 import bootRuntime.command.Processor.process
 import com.intellij.openapi.project.Project
 import java.io.File
-import bootRuntime.bundles.Runtime
 
 class Local(val project: Project, location: File) : Runtime(location) {
 

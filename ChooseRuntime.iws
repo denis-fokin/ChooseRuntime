@@ -24,13 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bootRuntime/bundles/Local.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bootRuntime/bundles/Local.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bootRuntime/command/Cleanup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bootRuntime/command/Cleanup.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bootRuntime/main/RuntimeBundleFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bootRuntime/main/RuntimeBundleFactory.kt" afterDir="false" />
     </list>
-    <list id="81bea316-dd5e-4fe2-979d-5c752bbb96e4" name="Name typ0" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Plugin">
+  <component name="RunManager" selected="Gradle.ChooseRuntime [buildPlugin]">
     <configuration name="ChooseRuntime [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -274,7 +272,8 @@
       <workItem from="1565178050804" duration="158000" />
       <workItem from="1565178818793" duration="1457000" />
       <workItem from="1565263299622" duration="1151000" />
-      <workItem from="1565338394709" duration="7834000" />
+      <workItem from="1565338394709" duration="8270000" />
+      <workItem from="1565354308504" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="Project files">
       <created>1565018076933</created>
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565343586082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New version">
+      <created>1565353294119</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565353294119</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +357,8 @@
     <MESSAGE value="GitHub description" />
     <MESSAGE value="Name typ0" />
     <MESSAGE value="Avoid nullable project, fix the action on Welcome Screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avoid nullable project, fix the action on Welcome Screen" />
+    <MESSAGE value="New version" />
+    <option name="LAST_COMMIT_MESSAGE" value="New version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="173" key="#Plugins" />
@@ -362,30 +369,30 @@
     <state x="708" y="83" key="#com.intellij.unscramble.UnscrambleDialog/3840.2160/3360.2100" />
     <state x="278" y="-973" key="CommitChangelistDialog2" />
     <state x="278" y="-973" key="CommitChangelistDialog2/3840.2160/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.bottom" />
+    <state width="1542" height="360" key="GridCell.Tab.0.bottom" />
     <state width="1139" height="243" key="GridCell.Tab.0.bottom/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.bottom/3840.2160/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.center" />
+    <state width="1542" height="360" key="GridCell.Tab.0.bottom/3840.2160/3360.2100" />
+    <state width="1542" height="360" key="GridCell.Tab.0.center" />
     <state width="1139" height="243" key="GridCell.Tab.0.center/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.center/3840.2160/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.left" />
+    <state width="1542" height="360" key="GridCell.Tab.0.center/3840.2160/3360.2100" />
+    <state width="1542" height="360" key="GridCell.Tab.0.left" />
     <state width="1139" height="243" key="GridCell.Tab.0.left/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.left/3840.2160/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.right" />
+    <state width="1542" height="360" key="GridCell.Tab.0.left/3840.2160/3360.2100" />
+    <state width="1542" height="360" key="GridCell.Tab.0.right" />
     <state width="1139" height="243" key="GridCell.Tab.0.right/3360.2100" />
-    <state width="1158" height="403" key="GridCell.Tab.0.right/3840.2160/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.bottom" />
+    <state width="1542" height="360" key="GridCell.Tab.0.right/3840.2160/3360.2100" />
+    <state width="1542" height="329" key="GridCell.Tab.1.bottom" />
     <state width="1139" height="388" key="GridCell.Tab.1.bottom/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.bottom/3840.2160/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.center" />
+    <state width="1542" height="329" key="GridCell.Tab.1.bottom/3840.2160/3360.2100" />
+    <state width="1542" height="329" key="GridCell.Tab.1.center" />
     <state width="1139" height="388" key="GridCell.Tab.1.center/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.center/3840.2160/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.left" />
+    <state width="1542" height="329" key="GridCell.Tab.1.center/3840.2160/3360.2100" />
+    <state width="1542" height="329" key="GridCell.Tab.1.left" />
     <state width="1139" height="388" key="GridCell.Tab.1.left/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.left/3840.2160/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.right" />
+    <state width="1542" height="329" key="GridCell.Tab.1.left/3840.2160/3360.2100" />
+    <state width="1542" height="329" key="GridCell.Tab.1.right" />
     <state width="1139" height="388" key="GridCell.Tab.1.right/3360.2100" />
-    <state width="1158" height="379" key="GridCell.Tab.1.right/3840.2160/3360.2100" />
+    <state width="1542" height="329" key="GridCell.Tab.1.right/3840.2160/3360.2100" />
     <state x="387" y="168" width="1191" height="647" key="IDE.errors.dialog" />
     <state x="387" y="168" width="1191" height="647" key="IDE.errors.dialog/3840.2160/3360.2100" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
@@ -393,6 +400,8 @@
     <state x="278" y="167" key="Vcs.Push.Dialog" />
     <state x="278" y="167" key="Vcs.Push.Dialog/3360.2100" />
     <state x="278" y="167" key="Vcs.Push.Dialog/3840.2160/3360.2100" />
+    <state width="757" height="478" key="XDebugger.FullValuePopup" />
+    <state width="757" height="478" key="XDebugger.FullValuePopup/3840.2160/3360.2100" />
     <state x="443" y="113" width="1137" height="845" key="find.popup" />
     <state x="443" y="113" width="1137" height="845" key="find.popup/3360.2100" />
     <state x="443" y="113" width="1137" height="845" key="find.popup/3840.2160/3360.2100" />
@@ -405,8 +414,7 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Remote">
-        <watch expression="e.project" />
-        <watch expression="e.project!!" language="kotlin" />
+        <watch expression="it" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

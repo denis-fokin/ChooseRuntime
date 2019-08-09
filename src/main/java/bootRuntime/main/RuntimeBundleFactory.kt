@@ -51,7 +51,7 @@ class RuntimeLocationsFactory {
   }
 
   fun bundlesFromLocations(project: Project, locations: List<File>): List<Runtime> {
-      return locations.map { location -> Local(project, location) }.toList()
+      return locations.map { location -> Local(project, location) }.filter { !it.fileName.contains("1.9") }.toList()
   }
 
   fun operationSystem() : OperationSystem {
@@ -74,8 +74,8 @@ class RuntimeLocationsFactory {
     val jbrRepoName = BinTrayConfig.jbrRepoName
     val linkTemplate = "https://dl.bintray.com/%s/%s";
 
-    val runtimes = collectRuntimes(String.format(linkTemplate, subject, repoName), project, ".*\"(jbsdk.*%s.*?)\"")
-    runtimes.addAll((collectRuntimes(String.format(linkTemplate, subject, jbrRepoName), project, ".*\".*?(jbrsdk.*%s.*?)\"")))
+    val runtimes = collectRuntimes(String.format(linkTemplate, subject, repoName), project, ".*\"(jbsdk.*%s.*%s.*?)\"")
+    runtimes.addAll((collectRuntimes(String.format(linkTemplate, subject, jbrRepoName), project, ".*\".*?(jbrsdk.*%s.*%s.*?)\"")))
 
     return runtimes
   }
@@ -96,13 +96,21 @@ class RuntimeLocationsFactory {
       else -> ""
     }
 
-    val r = Pattern.compile(String.format(bundleNamePattern, osFilter))
+    val archFilter = when {
+      SystemInfo.is32Bit -> "x86"
+      else -> "x64"
+    }
+
+    val r = Pattern.compile(String.format(bundleNamePattern, osFilter, archFilter))
     val m = r.matcher(response)
 
     val list = mutableListOf<Runtime>()
 
     while (m.find()) {
-      list.add(Remote(project, m.group(1)))
+      val remoteFileName = m.group(1)
+      if (!remoteFileName.contains("sdk9")) {
+        list.add(Remote(project, remoteFileName))
+      }
     }
 
     return list
