@@ -5,9 +5,9 @@ IntelliJ IDEA includes JetBrains Runtime. It is recommended to run IntelliJ IDEA
 ## Where the Runtimes come from?
 
 With the plugin you can
-specify a location on the disk
-choose among Java Runtimes installed in common places
-choose a runtime from runtimes stored on our BinTray storage
+* specify a location on the disk
+* choose among Java Runtimes installed in common places
+* choose a runtime from runtimes stored on our BinTray storage
 
 ## How to run the action?
 
