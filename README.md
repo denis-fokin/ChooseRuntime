@@ -11,28 +11,28 @@ With the plugin you can
 
 ## How to run the action?
 
-As far as the plugin mostly intended for IntelliJ support assistance, the action is not discoverable through menus or toolbars. To open the Choose Runtime dialog, use Search Everywhere or Find Action actions.
+As far as the plugin is mostly intended for IntelliJ support assistance, the action is not discoverable through menus or toolbars. In order to open "Choose Runtime" dialog, invoke Search Everywhere or Find Action first and search for "Choose Runtime" action
 
 ## What am I supposed to see?
 
-To load data from the server the first show of the Choose Runtime dialog takes time. You see a progress at this moment. Right after the job done a dialog has appeared. When the dialog opens, there is a combobox. The combobox contains an item in bold. This item is a Runtime that is currently used to bootstrap the IDE.
+The first "Choose Runtime" dialog opening takes time while Runtime list is loaded from the server. This process is indicated with a progress bar. Right after this job done the dialog appears. It contains a combobox that lists available runtimes (both local and remote). Runtime which is currently used to bootstrap the IDE is marked in bold.
 
 ## What can I do?
 
-You can use the combobox to choose one of the Runtimes on the list. You can just type a build or java version to filter out the content of the list. Every time you pick out another Runtime, corresponding actions in the bottom right corner are updated.
+You can use the combobox to select a desired Runtime from the list. It is possible to just type a build or java version to filter out the content of the list. Every time you pick a  Runtime, the action on the bottom-right button is updated.
 
-## If I want to use the Runtime that the IDE was initially bundled with?
+## What if I want to use the Runtime that the IDE was initially bundled with?
 
 If you need to reset the Runtime, press "Use Default" button.
 
 ## Every Runtime wastes space, right?
 
-If you need to clean up space, use the "Clean Up” button. If the current bootstrap Runtime is a downloaded one, it is not deleted.
+If you need to remove downloaded runtimes, use the "Clean Up” button. Note that if the currently used boot Runtime is a downloaded one, it will not be deleted.
 
 ## How to install a Runtime that I have downloaded manually?
 
-In order to install a local Runtime, which location is not a usual one, use the ellipsis [...] button on the right of the combobox.
+In order to install a local Runtime from the disk, use the ellipsis [...] button on the right of the combobox.
 
 ## Eventually...
 
-Each time you choose the install action, the IDE ends up in reboot.
+Each time you choose the "Install" action, the IDE reboots with the selected boot runtime.
