@@ -24,15 +24,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2e882b-c363-4f20-ac25-f690302ecaa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bootRuntime/main/Util.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChooseRuntime.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseRuntime.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChooseRuntime.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Choose_Runtime.ChooseRuntime.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bootRuntime/main/ChooseBootRuntimeAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bootRuntime/main/ChooseBootRuntimeAction.kt" afterDir="false" />
     </list>
+    <list id="81bea316-dd5e-4fe2-979d-5c752bbb96e4" name="Name typ0" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,17 +108,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="38" />
-    <option name="width" value="1262" />
-    <option name="height" value="932" />
   </component>
   <component name="ProjectId" id="1Oscm3mgEEcKftOZRPO8vCsfGdf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -169,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ChooseRuntime [buildPlugin]">
+  <component name="RunManager" selected="Gradle.Plugin">
     <configuration name="ChooseRuntime [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -279,7 +271,9 @@
       <workItem from="1565031639649" duration="248000" />
       <workItem from="1565169245611" duration="3120000" />
       <workItem from="1565178050804" duration="158000" />
-      <workItem from="1565178818793" duration="211000" />
+      <workItem from="1565178818793" duration="1457000" />
+      <workItem from="1565263299622" duration="1151000" />
+      <workItem from="1565338394709" duration="4413000" />
     </task>
     <task id="LOCAL-00001" summary="Project files">
       <created>1565018076933</created>
@@ -309,7 +303,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565171919996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Name typ0">
+      <created>1565180863791</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565180863791</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Name typ0">
+      <created>1565341596930</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565341596930</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,37 +341,42 @@
     <MESSAGE value="Settings update" />
     <MESSAGE value="Config  and description improvements" />
     <MESSAGE value="GitHub description" />
-    <option name="LAST_COMMIT_MESSAGE" value="GitHub description" />
+    <MESSAGE value="Name typ0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Name typ0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="173" key="#Plugins" />
     <state x="421" y="173" key="#Plugins/3360.2100" />
     <state x="140" y="71" key="#Project_Structure" />
     <state x="140" y="71" key="#Project_Structure/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.bottom" />
+    <state x="708" y="83" key="#com.intellij.unscramble.UnscrambleDialog" />
+    <state x="708" y="83" key="#com.intellij.unscramble.UnscrambleDialog/3840.2160/3360.2100" />
+    <state x="278" y="-973" key="CommitChangelistDialog2" />
+    <state x="278" y="-973" key="CommitChangelistDialog2/3840.2160/3360.2100" />
+    <state width="1158" height="403" key="GridCell.Tab.0.bottom" />
     <state width="1139" height="243" key="GridCell.Tab.0.bottom/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.bottom/3840.2160/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.center" />
+    <state width="1158" height="403" key="GridCell.Tab.0.bottom/3840.2160/3360.2100" />
+    <state width="1158" height="403" key="GridCell.Tab.0.center" />
     <state width="1139" height="243" key="GridCell.Tab.0.center/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.center/3840.2160/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.left" />
+    <state width="1158" height="403" key="GridCell.Tab.0.center/3840.2160/3360.2100" />
+    <state width="1158" height="403" key="GridCell.Tab.0.left" />
     <state width="1139" height="243" key="GridCell.Tab.0.left/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.left/3840.2160/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.right" />
+    <state width="1158" height="403" key="GridCell.Tab.0.left/3840.2160/3360.2100" />
+    <state width="1158" height="403" key="GridCell.Tab.0.right" />
     <state width="1139" height="243" key="GridCell.Tab.0.right/3360.2100" />
-    <state width="1139" height="243" key="GridCell.Tab.0.right/3840.2160/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.bottom" />
+    <state width="1158" height="403" key="GridCell.Tab.0.right/3840.2160/3360.2100" />
+    <state width="1158" height="379" key="GridCell.Tab.1.bottom" />
     <state width="1139" height="388" key="GridCell.Tab.1.bottom/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.bottom/3840.2160/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.center" />
+    <state width="1158" height="379" key="GridCell.Tab.1.bottom/3840.2160/3360.2100" />
+    <state width="1158" height="379" key="GridCell.Tab.1.center" />
     <state width="1139" height="388" key="GridCell.Tab.1.center/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.center/3840.2160/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.left" />
+    <state width="1158" height="379" key="GridCell.Tab.1.center/3840.2160/3360.2100" />
+    <state width="1158" height="379" key="GridCell.Tab.1.left" />
     <state width="1139" height="388" key="GridCell.Tab.1.left/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.left/3840.2160/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.right" />
+    <state width="1158" height="379" key="GridCell.Tab.1.left/3840.2160/3360.2100" />
+    <state width="1158" height="379" key="GridCell.Tab.1.right" />
     <state width="1139" height="388" key="GridCell.Tab.1.right/3360.2100" />
-    <state width="1139" height="388" key="GridCell.Tab.1.right/3840.2160/3360.2100" />
+    <state width="1158" height="379" key="GridCell.Tab.1.right/3840.2160/3360.2100" />
     <state x="387" y="168" key="IDE.errors.dialog" />
     <state x="387" y="168" key="IDE.errors.dialog/3840.2160/3360.2100" />
     <state x="158" y="133" width="1355" height="700" key="SettingsEditor" />
@@ -378,5 +391,14 @@
     <state width="700" height="626" key="javadoc.popup.new/3840.2160/3360.2100" />
     <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup" />
     <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup/3360.2100" />
+    <state x="329" y="152" width="1251" height="725" key="search.everywhere.popup/3840.2160/3360.2100" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="e.project" />
+        <watch expression="e.project!!" language="kotlin" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

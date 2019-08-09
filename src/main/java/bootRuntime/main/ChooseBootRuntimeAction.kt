@@ -32,28 +32,32 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
   override fun actionPerformed(e: AnActionEvent) {
 
     val bundles:MutableList<Runtime> = mutableListOf()
+    val project = getProjectOrDefault(e)
 
-    ProgressManager.getInstance().run(object : Task.Modal(e.project, "Loading Runtime List...", false) {
+    val file = File(System.getProperty("java.home"))
+    installed = Local(project, javaHomeToInstallationLocation(file))
+
+
+    ProgressManager.getInstance().run(object : Task.Modal(project, "Loading Runtime List...", false) {
       override fun run(progressIndicator: ProgressIndicator) {
           try {
-            val file = File(System.getProperty("java.home"))
             if (file.exists()) {
-              val runtime = Local(project, javaHomeToInstallationLocation(file))
-              installed = runtime
               bundles.add(installed)
             }
           } catch (exc : Exception) {
             // todo ask for file removal if it is broken
           }
-        bundles.addAll(RuntimeLocationsFactory().localBundles(e.project!!))
-        bundles.addAll(RuntimeLocationsFactory().bintrayBundles(e.project!!))
+
+        val projectOrDefault = getProjectOrDefault(e)
+        bundles.addAll(RuntimeLocationsFactory().localBundles(projectOrDefault))
+        bundles.addAll(RuntimeLocationsFactory().bintrayBundles(projectOrDefault))
       }
     })
 
     // todo change to dsl
     val southPanel = ActionPanel()
 
-    val controller = Controller(e.project!!, southPanel, Model(installed, bundles), installed);
+    val controller = Controller(getProjectOrDefault(e), southPanel, Model(installed, bundles), installed);
 
     val repositoryUrlFieldSpinner = JLabel(AnimatedIcon.Default())
     repositoryUrlFieldSpinner.isVisible = false
@@ -66,7 +70,7 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
 
     val comboboxWithBrowserButton = ComponentWithBrowseButton(combobox) {
       val descriptor = FileChooserDescriptorFactory.createSingleFolderDescriptor()
-      val chooser = FileChooserFactory.getInstance().createPathChooser(descriptor, e.project, WindowManager.getInstance().suggestParentWindow(e.project))
+      val chooser = FileChooserFactory.getInstance().createPathChooser(descriptor, project, WindowManager.getInstance().suggestParentWindow(e.project))
       chooser.choose(LocalFileSystem.getInstance().findFileByIoFile(File("~"))) {
         file -> file.first()?.let{f ->
         File(f.path).walk().filter { file -> file.name == "tools.jar" ||
@@ -75,8 +79,8 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
 
           val local = ProgressManager.getInstance().
             runProcessWithProgressSynchronously<Local, RuntimeException>(
-              {Local(e.project!!, javaHomeToInstallationLocation(javaHomeFromFile(file)))},
-              "Initializing Runtime Info", false, e.project!!
+              {Local(getProjectOrDefault(e), javaHomeToInstallationLocation(javaHomeFromFile(file)))},
+              "Initializing Runtime Info", false, getProjectOrDefault(e)
             )
 
           myRuntimeUrlComboboxModel.add(local)
@@ -89,7 +93,7 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
       }
     }
 
-    val myRuntimeUrlField = TextFieldWithAutoCompletion<Runtime>(e.project,
+    val myRuntimeUrlField = TextFieldWithAutoCompletion<Runtime>(project,
                                                                  runtimeCompletionProvider,
                                                                  false,
                                                                  "")
@@ -151,7 +155,7 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
     constraint.insets = Insets(10, 0,10, 0)
     centralPanel.add(comboboxWithBrowserButton, constraint)
 
-    val myDialogWrapper = object: DialogWrapper(e.project) {
+    val myDialogWrapper = object: DialogWrapper(project) {
       init {
         title = "Choose Runtime"
         init()
