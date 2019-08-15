@@ -1,38 +1,23 @@
-# Choose Runtime Plugin
+# Plugin to switch the Java runtime
 
 IntelliJ IDEA includes JetBrains Runtime. It is recommended to run IntelliJ IDEA using JetBrains Runtime, which fixes various known OpenJDK and Oracle JDK bugs, and provides better performance and stability. But in some cases you may be required to use another Java runtime or a specific version of JetBrains Runtime.
 
-## Where the Runtimes come from?
+With the plugin you can do the following:
 
-With the plugin you can
-* specify a location on the disk
-* choose among Java Runtimes installed in common places
-* choose a runtime from runtimes stored on our BinTray storage
+* choose any build of JetBrains Runtime available in the JetBrains BinTray storage
+* choose among detected local Java runtimes installed in common places
+* manually specify the location of a Java runtime anywhere in your file system
 
-## How to run the action?
+The plugin is intended for JetBrains support assistance (when support asks a user with an issue to run IntelliJ IDEA on a specific Java runtime). For this reason, the dialog is not discoverable through menus or toolbars to avoid unintended use. To open **Choose Runtime** dialog, invoke **Search Everywhere** (press Shift twice) or **Find Action** (Ctrl + Shift + A or Cmd + Shift + A) and search for **Choose Runtime**.
 
-As far as the plugin is mostly intended for IntelliJ support assistance, the action is not discoverable through menus or toolbars. In order to open "Choose Runtime" dialog, invoke Search Everywhere or Find Action first and search for "Choose Runtime" action
+When you open the **Choose Runtime** dialog for the first time, it may take a while to load the list of runtimes from the server. This process is indicated with a progress bar. The list contains available local and remote runtimes. The runtime which is currently used to bootstrap the IDE is written in bold.
 
-## What am I supposed to see?
+You can type a build number or Java version to filter the list. Every time you select a runtime, the bottom-right button is updated.
 
-The first "Choose Runtime" dialog opening takes time while Runtime list is loaded from the server. This process is indicated with a progress bar. Right after this job done the dialog appears. It contains a combobox that lists available runtimes (both local and remote). Runtime which is currently used to bootstrap the IDE is marked in bold.
+If you want to reset to the default runtime that the IDE initially used, click **Use Default**.
 
-## What can I do?
+If you want to remove previously downloaded runtimes, use the **Clean Up** button. Note that the currently used boot runtime is not be deleted in this case.
 
-You can use the combobox to select a desired Runtime from the list. It is possible to just type a build or java version to filter out the content of the list. Every time you pick a  Runtime, the action on the bottom-right button is updated.
+In order to install a local runtime from disk, use the ellipsis **...** button to the right of the list.
 
-## What if I want to use the Runtime that the IDE was initially bundled with?
-
-If you need to reset the Runtime, press "Use Default" button.
-
-## Every Runtime wastes space, right?
-
-If you need to remove downloaded runtimes, use the "Clean Up” button. Note that if the currently used boot Runtime is a downloaded one, it will not be deleted.
-
-## How to install a Runtime that I have downloaded manually?
-
-In order to install a local Runtime from the disk, use the ellipsis [...] button on the right of the combobox.
-
-## Eventually...
-
-Each time you choose the "Install" action, the IDE reboots with the selected boot runtime.
+When you click the **Install** button, the IDE reboots with the selected runtime.
