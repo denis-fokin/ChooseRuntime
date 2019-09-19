@@ -6,6 +6,7 @@ import com.intellij.execution.configurations.GeneralCommandLine
 import com.intellij.execution.util.ExecUtil
 import com.intellij.openapi.application.PathManager
 import com.intellij.openapi.progress.ProgressManager
+import com.intellij.openapi.project.ex.ProjectManagerEx
 import com.intellij.openapi.util.SystemInfo
 import java.io.File
 
@@ -58,6 +59,6 @@ abstract class Runtime(initialLocation:File) {
           }
         }
       },
-      "Fetching Runtime Version", false, null)
+      "Fetching Runtime Version", false, ProjectManagerEx.getInstanceEx().defaultProject)
   }
 }
