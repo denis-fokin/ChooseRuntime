@@ -5,6 +5,7 @@ import bootRuntime.command.CommandFactory
 import bootRuntime.command.CommandFactory.produce
 import bootRuntime.command.Processor.process
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.util.text.StringUtil
 import java.io.File
 
 class Local(val project: Project, location: File) : Runtime(location) {
@@ -25,6 +26,7 @@ class Local(val project: Project, location: File) : Runtime(location) {
   }
 
   override fun toString(): String {
-    return "$version [Local]"
+    val path = StringUtil.shortenPathWithEllipsis(installationPath.path, 40, true)
+    return "$version [Local $path]"
   }
 }
