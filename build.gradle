@@ -18,7 +18,7 @@ apply plugin: 'kotlin'
 group 'Choose Runtime'
 version '1.0.5'
 
-//sourceCompatibility = 1.8
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
