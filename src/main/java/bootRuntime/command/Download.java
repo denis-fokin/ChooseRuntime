@@ -30,7 +30,7 @@ public class Download extends RuntimeCommand {
       String link = "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=" + getRuntime().getFileName();
       String oldLink = "https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=" + getRuntime().getFileName();
 
-    runWithProgress("Downloading...", (progressIndicator) -> {
+    runWithProgress("Downloading...", true, (progressIndicator) -> {
       progressIndicator.setIndeterminate(true);
 
       try {

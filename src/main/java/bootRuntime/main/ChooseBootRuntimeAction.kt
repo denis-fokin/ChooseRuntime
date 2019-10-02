@@ -38,7 +38,7 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
     installed = Local(project, javaHomeToInstallationLocation(file))
 
 
-    ProgressManager.getInstance().run(object : Task.Modal(project, "Loading Runtime List...", false) {
+    ProgressManager.getInstance().run(object : Task.Modal(project, "Loading Runtime List...", true) {
       override fun run(progressIndicator: ProgressIndicator) {
           try {
             if (file.exists()) {

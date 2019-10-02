@@ -59,6 +59,6 @@ abstract class Runtime(initialLocation:File) {
           }
         }
       },
-      "Fetching Runtime Version", false, ProjectManagerEx.getInstanceEx().defaultProject)
+      "Fetching Runtime Version", true, ProjectManagerEx.getInstanceEx().defaultProject)
   }
 }

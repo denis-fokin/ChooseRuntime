@@ -1,17 +1,16 @@
 // Copyright 2000-2019 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
 package bootRuntime.command
 
+import bootRuntime.bundles.Runtime
 import bootRuntime.main.BinTrayUtil
 import bootRuntime.main.Controller
 import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.util.io.FileUtil
-
-import java.awt.event.ActionEvent
-import java.io.IOException
-import bootRuntime.bundles.Runtime
 import com.intellij.openapi.util.SystemInfo
+import com.intellij.openapi.util.io.FileUtil
+import java.awt.event.ActionEvent
 import java.io.File
+import java.io.IOException
 
 class Install internal constructor(project: Project, controller: Controller, runtime: Runtime) : RuntimeCommand(project, controller, "Install", runtime) {
 

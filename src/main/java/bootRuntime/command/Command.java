@@ -28,7 +28,11 @@ public abstract class Command extends AbstractAction {
   }
 
   void runWithProgress(String title, final Consumer<? super ProgressIndicator> progressIndicatorConsumer) {
-    ProgressManager.getInstance().run(new Task.Modal(myProject, title, false) {
+    runWithProgress(title, false, progressIndicatorConsumer);
+  }
+
+  void runWithProgress(String title, boolean canBeCancelled, final Consumer<? super ProgressIndicator> progressIndicatorConsumer) {
+    ProgressManager.getInstance().run(new Task.Modal(myProject, title, canBeCancelled) {
       @Override
       public void run(@NotNull ProgressIndicator progressIndicator) {
         progressIndicatorConsumer.accept(progressIndicator);

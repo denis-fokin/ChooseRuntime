@@ -22,7 +22,7 @@ public class Extract extends RuntimeCommand {
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    runWithProgress("Extracting...", indicator -> {
+    runWithProgress("Extracting...", true, indicator -> {
       String archiveFileName = getRuntime().getFileName();
       String directoryToExtractName = BinTrayUtil.archveToDirectoryName(archiveFileName);
       File jdkStoragePathFile = BinTrayUtil.getJdkStoragePathFile();
