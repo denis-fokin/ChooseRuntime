@@ -42,7 +42,7 @@ abstract class Runtime(initialLocation:File) {
     return fileName
   }
 
-  protected fun fetchVersion (): String {
+  protected fun fetchVersion(): String? {
     return ProgressManager.getInstance().runProcessWithProgressSynchronously<String, RuntimeException>(
       {
         installationPath.walk().filter { file -> file.name == JAVA_FILE_NAME }.firstOrNull()?.let { javaFile ->
@@ -50,12 +50,11 @@ abstract class Runtime(initialLocation:File) {
             val output = ExecUtil.execAndGetOutput(GeneralCommandLine(javaFile.path, "-version"))
             //val matchResult: MatchResult? = "version \"(\\d?(.\\d)*(.\\d)*_*\\d*\\d*-*(ea|release|internal)*)\"".toRegex().find(output.stderr)
             val matchResult: MatchResult? = "\\((build [\\d.+-w]*)\\)".toRegex().find(output.stderr)
-            return@runProcessWithProgressSynchronously matchResult?.groups?.get(1)?.value
-          }
-          catch (e: Exception) {
+            matchResult?.groups?.get(1)?.value
+          } catch (e: Exception) {
             println("tried to execute : ${javaFile.path}, \"-version\")")
             println("Error: ${e}")
-            return@runProcessWithProgressSynchronously "Undefined"
+            null
           }
         }
       },

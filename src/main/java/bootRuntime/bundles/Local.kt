@@ -13,7 +13,7 @@ class Local(val project: Project, location: File) : Runtime(location) {
 
   val version : String by lazy {
     // runs on first access of messageView
-    fetchVersion()
+    fetchVersion() ?: "Undefined"
   }
 
   override fun install() {
