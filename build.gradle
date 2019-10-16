@@ -36,7 +36,7 @@ intellij {
 
 patchPluginXml {
     patchPluginXml {
-        untilBuild '193.*'
+        untilBuild '201.*'
     }
 }
 compileKotlin {

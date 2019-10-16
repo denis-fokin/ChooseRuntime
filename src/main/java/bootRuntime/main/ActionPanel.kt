@@ -9,5 +9,6 @@ class ActionPanel : JPanel(GridBagLayout()) {
   override fun addNotify() {
     super.addNotify()
     this.minimumSize = preferredSize
+
   }
 }
