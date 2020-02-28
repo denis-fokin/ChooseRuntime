@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'kotlin'
 
 group 'Choose Runtime'
-version '1.0.8'
+version '1.0.9'
 
 sourceCompatibility = 1.8
 
@@ -36,7 +36,7 @@ intellij {
 
 patchPluginXml {
     patchPluginXml {
-        untilBuild '201.*'
+        untilBuild '202.*'
     }
 }
 compileKotlin {
