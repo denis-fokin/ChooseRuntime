@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'kotlin'
 
 group 'Choose Runtime'
-version '1.0.9'
+version '1.0.10'
 
 sourceCompatibility = 1.8
 
@@ -31,14 +31,13 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '182.5262.2'
+    version 'LATEST-EAP-SNAPSHOT'
 }
 
 patchPluginXml {
-    patchPluginXml {
-        untilBuild '202.*'
-    }
+    untilBuild = null
 }
+
 compileKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
