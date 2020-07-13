@@ -1,11 +1,8 @@
 // Copyright 2000-2019 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
 package bootRuntime.main
 
-import bootRuntime.bundles.Local
 import bootRuntime.command.Cleanup
 import bootRuntime.command.CommandFactory
-import bootRuntime.command.CommandFactory.initialize
-import bootRuntime.command.CommandFactory.produce
 import bootRuntime.command.RuntimeCommand
 import bootRuntime.command.UseDefault
 import com.intellij.openapi.application.ApplicationManager
@@ -18,6 +15,8 @@ import java.awt.Insets
 import javax.swing.JButton
 import javax.swing.SwingUtilities
 import bootRuntime.bundles.Runtime
+import bootRuntime.command.CommandFactory.Companion.initialize
+import bootRuntime.command.CommandFactory.Companion.produce
 
 class Controller(val project: Project, val actionPanel:ActionPanel, val model: Model, val installed:Runtime) {
 
@@ -66,6 +65,7 @@ class Controller(val project: Project, val actionPanel:ActionPanel, val model: M
 
   private fun runtimeStateToActions(runtime:Runtime, currentState: BundleState) : List<RuntimeCommand> {
     return when (currentState) {
+      BundleState.ARCHIVED -> listOf(produce(CommandFactory.Type.ARCHIVE, runtime), produce(CommandFactory.Type.DELETE, runtime))
       BundleState.REMOTE -> listOf(produce(CommandFactory.Type.REMOTE_INSTALL, runtime), produce(CommandFactory.Type.DOWNLOAD, runtime))
       BundleState.DOWNLOADED -> listOf(produce(CommandFactory.Type.EXTRACT, runtime), produce(CommandFactory.Type.DELETE, runtime))
       BundleState.EXTRACTED -> listOf(produce(CommandFactory.Type.INSTALL, runtime), produce(CommandFactory.Type.DELETE, runtime))
@@ -75,7 +75,7 @@ class Controller(val project: Project, val actionPanel:ActionPanel, val model: M
     }
   }
 
-  fun add(local: Local) {
+  fun add(local: Runtime) {
     model.bundles.add(local)
     model.selectedBundle = local
   }

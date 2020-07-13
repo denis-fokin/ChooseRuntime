@@ -32,9 +32,8 @@ abstract class Runtime(initialLocation:File) {
     File(PathManager.getPluginTempPath(), fileName)
   }
 
-  val downloadPath: File by lazy {
+  open val downloadPath: File by lazy {
     File(BinTrayUtil.downloadPath(), fileName)
-
   }
 
   abstract fun install()
@@ -53,7 +52,7 @@ abstract class Runtime(initialLocation:File) {
             matchResult?.groups?.get(1)?.value
           } catch (e: Exception) {
             println("tried to execute : ${javaFile.path}, \"-version\")")
-            println("Error: ${e}")
+            println("Error: $e")
             null
           }
         }

@@ -11,6 +11,7 @@ import com.intellij.openapi.util.io.FileUtil
 import java.awt.event.ActionEvent
 import java.io.File
 import java.io.IOException
+import java.util.function.Consumer
 
 class Install internal constructor(project: Project, controller: Controller, runtime: Runtime) : RuntimeCommand(project, controller, "Install", runtime) {
 
@@ -28,14 +29,14 @@ class Install internal constructor(project: Project, controller: Controller, run
     }
 
     override fun actionPerformed(e: ActionEvent?) {
-        runWithProgress("Installing...") {
+        runWithProgress("Installing...", Consumer {
             try {
                 FileUtil.writeToFile(BinTrayUtil.getJdkConfigFilePath(), javaHomeFromInstallationPath(runtime.installationPath))
                 myController.restart()
             } catch (ioe: IOException) {
                 LOG.warn(ioe)
             }
-        }
+        })
     }
 
     companion object {

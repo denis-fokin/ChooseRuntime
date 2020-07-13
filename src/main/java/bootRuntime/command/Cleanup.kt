@@ -10,18 +10,19 @@ import com.intellij.openapi.util.io.FileUtil
 import bootRuntime.bundles.Runtime
 
 import java.awt.event.ActionEvent
+import java.util.function.Consumer
 
 class Cleanup(project: Project, controller: Controller, private val installedRuntime: Runtime) : Command(project, controller, "Clean Up") {
 
-    override fun actionPerformed(e: ActionEvent) {
+    override fun actionPerformed(e: ActionEvent?) {
         if (installedRuntime is Remote) {
             Messages.showInfoMessage("Currently you are using a downloaded Runtime to bootstrap the IDE. " + "This Runtime could not be removed.", "Some Files Could not Be Removed")
             return
         }
 
-        runWithProgress("Cleaning up...") {
+        runWithProgress("Cleaning up...", Consumer {
             FileUtil.delete(BinTrayUtil.downloadPath())
             FileUtil.delete(BinTrayUtil.getJdkConfigFilePath())
-        }
+        })
     }
 }

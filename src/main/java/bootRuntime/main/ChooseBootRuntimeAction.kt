@@ -1,6 +1,7 @@
 // Copyright 2000-2019 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
 package bootRuntime.main
 
+import bootRuntime.bundles.Archive
 import bootRuntime.bundles.Local
 import com.intellij.openapi.actionSystem.*
 import com.intellij.openapi.editor.event.DocumentListener
@@ -69,10 +70,28 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
     val runtimeCompletionProvider = RuntimeCompletionProvider(bundles)
 
     val comboboxWithBrowserButton = ComponentWithBrowseButton(combobox) {
-      val descriptor = FileChooserDescriptorFactory.createSingleFolderDescriptor()
-      val chooser = FileChooserFactory.getInstance().createPathChooser(descriptor, project, WindowManager.getInstance().suggestParentWindow(e.project))
+      val descriptor = FileChooserDescriptorFactory.createSingleFileOrFolderDescriptor()
+      val chooser = FileChooserFactory.getInstance().
+          createPathChooser(descriptor, project, WindowManager.getInstance().suggestParentWindow(e.project))
       chooser.choose(LocalFileSystem.getInstance().findFileByIoFile(File("~"))) {
         file -> file.first()?.let{f ->
+
+        if (f.extension == "gz") {
+          val archived = ProgressManager.getInstance().
+          runProcessWithProgressSynchronously<Archive, RuntimeException>(
+                  {
+                    Archive(getProjectOrDefault(e), File(f.path))
+                  },
+                  "Initializing Runtime Info", false, getProjectOrDefault(e)
+          )
+
+          myRuntimeUrlComboboxModel.add(archived)
+          bundles.add(archived)
+          runtimeCompletionProvider.setItems(bundles)
+          controller.add(archived)
+          combobox.selectedItem = archived
+        }
+
         File(f.path).walk().filter { file -> file.name == "tools.jar" ||
                                              file.name == "jrt-fs.jar"
         }.firstOrNull()?.let { file ->
@@ -161,7 +180,6 @@ class ChooseBootRuntimeAction : AnAction(), DumbAware {
         init()
         peer.window.isAutoRequestFocus = true
         controller.updateRuntime()
-
       }
 
       override fun getPreferredFocusedComponent(): JComponent? {

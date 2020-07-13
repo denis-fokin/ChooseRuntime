@@ -2,7 +2,7 @@
 package bootRuntime.bundles
 
 import bootRuntime.command.CommandFactory
-import bootRuntime.command.CommandFactory.produce
+import bootRuntime.command.CommandFactory.Companion.produce
 import bootRuntime.command.Processor.process
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.text.StringUtil
