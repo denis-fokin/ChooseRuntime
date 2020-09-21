@@ -8,9 +8,12 @@ import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.SystemInfo
 import com.intellij.openapi.util.io.FileUtil
+import com.intellij.util.io.toByteArray
 import java.awt.event.ActionEvent
 import java.io.File
 import java.io.IOException
+import java.nio.CharBuffer
+import java.nio.charset.Charset
 import java.util.function.Consumer
 
 class Install internal constructor(project: Project, controller: Controller, runtime: Runtime) : RuntimeCommand(project, controller, "Install", runtime) {
@@ -31,7 +34,15 @@ class Install internal constructor(project: Project, controller: Controller, run
     override fun actionPerformed(e: ActionEvent?) {
         runWithProgress("Installing...", Consumer {
             try {
-                FileUtil.writeToFile(BinTrayUtil.getJdkConfigFilePath(), javaHomeFromInstallationPath(runtime.installationPath))
+                if (SystemInfo.isWindows) {
+                    val encoding = System.getProperty("sun.jnu.encoding")
+                    val javaHomeFromInstallationPath = javaHomeFromInstallationPath(runtime.installationPath)
+                    val charset = Charset.forName(encoding)
+                    val charsetEncoder = charset.newEncoder()
+                    FileUtil.writeToFile(BinTrayUtil.getJdkConfigFilePath(), charsetEncoder.encode(CharBuffer.wrap(javaHomeFromInstallationPath)).toByteArray()) }
+                else {
+                    FileUtil.writeToFile(BinTrayUtil.getJdkConfigFilePath(), javaHomeFromInstallationPath(runtime.installationPath))
+                }
                 myController.restart()
             } catch (ioe: IOException) {
                 LOG.warn(ioe)
